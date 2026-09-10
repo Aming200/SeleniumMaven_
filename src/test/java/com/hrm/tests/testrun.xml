@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SuiteTest" verbose="1" parallel="none" thread-count="2">
+<!--    <parameter name="browserType" value="Chrome"></parameter>-->
+<!--    <parameter name="webUrl" value="https://crm.anhtester.com/admin/authentication"></parameter>-->
+    <listeners>
+        <listener class-name="com.hrm.listeners.TestListener"/>
+    </listeners>
+    <test name="hrmpage">
+        <classes>
+            <class name="com.hrm.tests.LoginTest">
+            </class>
+            <class name="com.hrm.tests.CustomerTest">
+                <methods>
+                    <exclude name="verifyDeleteCustomerSuccess" />
+                </methods>
+            </class>
+            <class name="com.hrm.tests.ProjectTest">
+            </class>
+
+        </classes>
+    </test>
+</suite>

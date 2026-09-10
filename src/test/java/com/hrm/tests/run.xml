@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="1">
+    <parameter name="browserType" value="Chrome"></parameter>
+    <parameter name="webUrl" value="https://crm.anhtester.com/admin/authentication"></parameter>
+
+    <test name="hrmpage">
+        <classes>
+            <class name="com.hrm.base.BaseTest">
+                <methods>
+
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
