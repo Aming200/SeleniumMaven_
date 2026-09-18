@@ -16,9 +16,7 @@ Cài đặt và chạy dự án
 
 1. Yêu cầu hệ thống
 JDK 11 trở lên đã được cài đặt và thiết lập biến môi trường `JAVA_HOME`.
-
 Maven đã được cài đặt và thiết lập biến môi trường `MAVEN_HOME`.
-
 (Tùy chọn) Cài đặt Allure Commandline nếu bạn muốn xem báo cáo trên máy tính.
 
 3. Cài đặt
