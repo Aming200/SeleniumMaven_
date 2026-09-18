@@ -2,6 +2,7 @@
 Selenium WebDriver + Java + TestNG automation framework with POM, Allure reporting. Demo project testing Perfex CRM login module.
 
 Công nghệ sử dụng: 
+
 Java 11
 Selenium WebDriver 4.43.0
 TestNG 7.10.2 
@@ -12,6 +13,7 @@ AspectJWeaver 1.9.25.1
 Maven Surefire Plugin 3.5.2 
 
 Cài đặt và chạy dự án
+
 1. Yêu cầu hệ thống
 JDK 11 trở lên đã được cài đặt và thiết lập biến môi trường `JAVA_HOME`.
 Maven đã được cài đặt và thiết lập biến môi trường `MAVEN_HOME`.
@@ -30,6 +32,7 @@ Cài đặt các thư viện cần thiết
 mvn clean install -DskipTests
 
 3. Chạy test
+
 Cách 1: Chạy qua Maven Command Line
 Chạy toàn bộ test
 mvn clean test
