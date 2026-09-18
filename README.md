@@ -16,10 +16,12 @@ Cài đặt và chạy dự án
 
 1. Yêu cầu hệ thống
 JDK 11 trở lên đã được cài đặt và thiết lập biến môi trường `JAVA_HOME`.
+
 Maven đã được cài đặt và thiết lập biến môi trường `MAVEN_HOME`.
+
 (Tùy chọn) Cài đặt Allure Commandline nếu bạn muốn xem báo cáo trên máy tính.
 
-2. Cài đặt
+3. Cài đặt
 Clone dự án về máy và tải các thư viện (dependencies) qua Maven:
 
 Clone dự án 
@@ -34,16 +36,20 @@ mvn clean install -DskipTests
 3. Chạy test
 
 Cách 1: Chạy qua Maven Command Line
+
 Chạy toàn bộ test
 mvn clean test
+
 Chạy theo file suite testrun.xml 
 mvn clean test -Dsurefire.suiteXmlFiles=src/test/java/com/hrm/tests/testrun.xml
 
 Cách 2: Chạy trực tiếp trên IDE (IntelliJ IDEA / Eclipse)
+
 Mở file `testrun.xml` trong thư mục `src/test/resources/`.
 Click chuột phải và chọn Run 'testrun.xml' (hoặc Run '...Suite').
 
 4. Xem báo cáo kết quả (Allure Report)
+
 Sau khi test chạy xong, để xem báo cáo test chi tiết, hãy chạy lệnh sau:
 allure serve allure-results
 Trình duyệt mặc định sẽ tự động mở và hiển thị báo cáo Allure Report với thông tin chi tiết về từng test case, log và hình ảnh đính kèm (khi test fail)
