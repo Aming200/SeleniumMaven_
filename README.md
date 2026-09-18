@@ -48,6 +48,7 @@ Mở file `testrun.xml` trong thư mục `src/test/java/com/hrm/tests/`.
 Click chuột phải và chọn Run 'testrun.xml' (hoặc Run '...Suite').
 
 4. Xem báo cáo kết quả (Allure Report)
+
 Sau khi test chạy xong, để xem báo cáo test chi tiết, hãy chạy lệnh sau:
 allure serve allure-results
 Trình duyệt mặc định sẽ tự động mở và hiển thị báo cáo Allure Report với thông tin chi tiết về từng test case, log và hình ảnh đính kèm (khi test fail)
